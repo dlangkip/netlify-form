@@ -1,0 +1,41 @@
+
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+<body>
+    <h1>Contact</h1>
+    
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+      
+        <!-- Honeypot field for spam protection (hidden) -->
+        <p style="display: none;">
+          <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+        </p>
+      
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" id="subject" required>
+        
+        <label for="message">Message</label>
+        <textarea name="message" id="message" required></textarea>
+        
+        <br>
+        
+        <button type="submit">Send</button>
+      </form>
+        
+</body>
+</html>
+
+
+
